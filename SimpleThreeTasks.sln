@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleThreeTasks", "SimpleThreeTasks\SimpleThreeTasks.csproj", "{8B5649C0-02AA-41F8-8202-81ED68B86648}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B5649C0-02AA-41F8-8202-81ED68B86648}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B5649C0-02AA-41F8-8202-81ED68B86648}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B5649C0-02AA-41F8-8202-81ED68B86648}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B5649C0-02AA-41F8-8202-81ED68B86648}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1E66FC0-3A52-4245-885F-55A4D068F9AD}
+	EndGlobalSection
+EndGlobal

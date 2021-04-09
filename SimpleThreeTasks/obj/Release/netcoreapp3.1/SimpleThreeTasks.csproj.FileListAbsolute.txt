@@ -1,0 +1,12 @@
+C:\Users\Masha\source\repos\SimpleThreeTasks\SimpleThreeTasks\bin\Release\netcoreapp3.1\SimpleThreeTasks.exe
+C:\Users\Masha\source\repos\SimpleThreeTasks\SimpleThreeTasks\bin\Release\netcoreapp3.1\SimpleThreeTasks.deps.json
+C:\Users\Masha\source\repos\SimpleThreeTasks\SimpleThreeTasks\bin\Release\netcoreapp3.1\SimpleThreeTasks.runtimeconfig.json
+C:\Users\Masha\source\repos\SimpleThreeTasks\SimpleThreeTasks\bin\Release\netcoreapp3.1\SimpleThreeTasks.runtimeconfig.dev.json
+C:\Users\Masha\source\repos\SimpleThreeTasks\SimpleThreeTasks\bin\Release\netcoreapp3.1\SimpleThreeTasks.dll
+C:\Users\Masha\source\repos\SimpleThreeTasks\SimpleThreeTasks\bin\Release\netcoreapp3.1\SimpleThreeTasks.pdb
+C:\Users\Masha\source\repos\SimpleThreeTasks\SimpleThreeTasks\obj\Release\netcoreapp3.1\SimpleThreeTasks.AssemblyInfoInputs.cache
+C:\Users\Masha\source\repos\SimpleThreeTasks\SimpleThreeTasks\obj\Release\netcoreapp3.1\SimpleThreeTasks.AssemblyInfo.cs
+C:\Users\Masha\source\repos\SimpleThreeTasks\SimpleThreeTasks\obj\Release\netcoreapp3.1\SimpleThreeTasks.csproj.CoreCompileInputs.cache
+C:\Users\Masha\source\repos\SimpleThreeTasks\SimpleThreeTasks\obj\Release\netcoreapp3.1\SimpleThreeTasks.dll
+C:\Users\Masha\source\repos\SimpleThreeTasks\SimpleThreeTasks\obj\Release\netcoreapp3.1\SimpleThreeTasks.pdb
+C:\Users\Masha\source\repos\SimpleThreeTasks\SimpleThreeTasks\obj\Release\netcoreapp3.1\SimpleThreeTasks.genruntimeconfig.cache
