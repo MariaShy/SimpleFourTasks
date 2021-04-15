@@ -17,7 +17,7 @@ namespace SimpleThreeTasks
         {
             Console.OutputEncoding = Encoding.Unicode;
             Console.InputEncoding = Encoding.Unicode;
-            int user = 0;
+            int user;
 
             Console.WriteLine("This program has 3 methods:\n" +
                 "1. Method will show you, whether your number more than 7 or not.\n" +
@@ -71,21 +71,46 @@ namespace SimpleThreeTasks
 
         public static void MultipleOfThree()//+возможность вводить размерность и значения массива с обработкой исключений
         {
-            Console.WriteLine("3rd Method.\n"+
-                "Input, please, the array rank (int number):");
-            int rank = int.Parse(Console.ReadLine());
-            int[] arr = new int[rank];
-            Console.WriteLine("Input, please, the array elements (int numbers):");
-            for (int i = 0; i < arr.Length; i++)
+            while (true)
             {
-                arr[i] = int.Parse(Console.ReadLine());                
-            }
-            Console.WriteLine("All the numbers in array that are multiple of 3:");
-            for (int i = 0; i < arr.Length; i++)
-            {
-                if ((arr[i] % 3.0 == 0) && (arr[i] != 0))
-                    Console.WriteLine(arr[i]);
-            }
+                int rank;
+                Console.WriteLine("3rd Method.\n" +
+                    "Input, please, the array rank (int number) / *for returning back choose '-':");
+                string inputRank = Console.ReadLine();
+                if (inputRank == "-")
+                    break;
+                bool result1 = int.TryParse(inputRank, out rank);
+                if (result1)
+                {
+                    int[] arr = new int[rank];
+                    Console.WriteLine("Input, please, the array elements (int numbers):");
+                    for (int i = 0; i < arr.Length; i++)
+                    {
+                        int element;
+                        string inputElement = Console.ReadLine();
+                        bool result2 = int.TryParse(inputElement, out element);
+                        if (result2)
+                        {
+                            arr[i] = element;
+                        }
+                        else
+                        {
+                            i--;
+                            Console.WriteLine("Warning: only int numbers are applicable. Try again, please.");
+                        }
+                    }
+                    Console.WriteLine("All the numbers in array that are multiple of 3:");
+                    for (int i = 0; i < arr.Length; i++)
+                    {
+                        if ((arr[i] % 3.0 == 0) && (arr[i] != 0))
+                            Console.WriteLine(arr[i]);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Warning: only int number is applicable. Try again, please.");
+                }                
+            }            
         }
     }
 }
