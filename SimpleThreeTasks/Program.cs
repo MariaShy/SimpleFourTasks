@@ -22,23 +22,27 @@ namespace SimpleThreeTasks
             Console.WriteLine("This program has 3 methods:\n" +
                 "1. Method will show you, whether your number more than 7 or not.\n" +
                 "2. Method will show you, whether your name is equal to 'Вячеслав'.\n" +
-                "3. Method will show you all the numbers in array { 0, 1, 3, 4, 6 } that are multiple of 3.\n");
+                "3. Method will show you all the numbers in array that are multiple of 3.\n");
             try
             {
                 while (true)
                 {
                     Console.WriteLine(">> Please, choose 1, 2 or 3 (to exit choose 4):");
                     user = int.Parse(Console.ReadLine());
-                    if (user == 1)
-                        MoreThanSeven();
-                    else if (user == 2)
-                        NameEqualTo();
-                    else if (user == 3)
-                        MultipleOfThree();
-                    else if (user == 4)
+                    switch (user)
+                    {
+                        case 1:
+                            MoreThanSeven();
+                            break;
+                        case 2:
+                            NameEqualTo();
+                            break;
+                        case 3:
+                            MultipleOfThree();
+                            break;
+                    }
+                    if (user == 4)
                         break;
-                    else
-                        Console.WriteLine("Choose 1..4, please.");
                 }
             }
             catch
@@ -68,7 +72,7 @@ namespace SimpleThreeTasks
         public static void MultipleOfThree()
         {
             Console.WriteLine("3rd Method.");
-            int[] arr = new[] { 0, 1, 3, 4, 6 };
+            int[] arr = new[] { 0, 1, 3, 4, 6 }; // was by default
             for (int i = 0; i < arr.Length; i++)
             {
                 if ((arr[i] % 3.0 == 0) && (arr[i] != 0))

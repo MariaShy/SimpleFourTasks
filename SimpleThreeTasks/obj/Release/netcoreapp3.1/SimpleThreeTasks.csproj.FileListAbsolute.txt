@@ -10,3 +10,4 @@ C:\Users\Masha\source\repos\SimpleThreeTasks\SimpleThreeTasks\obj\Release\netcor
 C:\Users\Masha\source\repos\SimpleThreeTasks\SimpleThreeTasks\obj\Release\netcoreapp3.1\SimpleThreeTasks.dll
 C:\Users\Masha\source\repos\SimpleThreeTasks\SimpleThreeTasks\obj\Release\netcoreapp3.1\SimpleThreeTasks.pdb
 C:\Users\Masha\source\repos\SimpleThreeTasks\SimpleThreeTasks\obj\Release\netcoreapp3.1\SimpleThreeTasks.genruntimeconfig.cache
+C:\Users\Masha\source\repos\SimpleThreeTasks\SimpleThreeTasks\obj\Release\netcoreapp3.1\SimpleThreeTasks.csprojAssemblyReference.cache
