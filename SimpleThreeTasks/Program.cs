@@ -69,10 +69,18 @@ namespace SimpleThreeTasks
                 Console.WriteLine("Нет такого имени");
         }
 
-        public static void MultipleOfThree()
+        public static void MultipleOfThree()//+возможность вводить размерность и значения массива с обработкой исключений
         {
-            Console.WriteLine("3rd Method.");
-            int[] arr = new[] { 0, 1, 3, 4, 6 }; // was by default
+            Console.WriteLine("3rd Method.\n"+
+                "Input, please, the array rank (int number):");
+            int rank = int.Parse(Console.ReadLine());
+            int[] arr = new int[rank];
+            Console.WriteLine("Input, please, the array elements (int numbers):");
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] = int.Parse(Console.ReadLine());                
+            }
+            Console.WriteLine("All the numbers in array that are multiple of 3:");
             for (int i = 0; i < arr.Length; i++)
             {
                 if ((arr[i] % 3.0 == 0) && (arr[i] != 0))
