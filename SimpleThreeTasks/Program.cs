@@ -17,7 +17,7 @@ namespace SimpleThreeTasks
         {
             Console.OutputEncoding = Encoding.Unicode;
             Console.InputEncoding = Encoding.Unicode;
-            int user;
+            int userChoise;
 
             Console.WriteLine("This program has 3 methods:\n" +
                 "1. Method will show you, whether your number more than 7 or not.\n" +
@@ -28,8 +28,8 @@ namespace SimpleThreeTasks
                 while (true)
                 {
                     Console.WriteLine(">> Please, choose 1, 2 or 3 (to exit choose 4):");
-                    user = int.Parse(Console.ReadLine());
-                    switch (user)
+                    userChoise = int.Parse(Console.ReadLine());
+                    switch (userChoise)
                     {
                         case 1:
                             MoreThanSeven();
@@ -41,7 +41,7 @@ namespace SimpleThreeTasks
                             MultipleOfThree();
                             break;
                     }
-                    if (user == 4)
+                    if (userChoise == 4)
                         break;
                 }
             }
@@ -75,12 +75,12 @@ namespace SimpleThreeTasks
             {
                 int rank;
                 Console.WriteLine("3rd Method.\n" +
-                    "Input, please, the array rank (int number) / *for returning back choose '-':");
+                    "Input, please, the array rank (int number > 0) / *for returning back choose '-':");
                 string inputRank = Console.ReadLine();
                 if (inputRank == "-")
                     break;
-                bool result1 = int.TryParse(inputRank, out rank);
-                if (result1)
+                bool isInputRankCorrect = ((int.TryParse(inputRank, out rank))&&(rank > 0));
+                if (isInputRankCorrect)
                 {
                     int[] arr = new int[rank];
                     Console.WriteLine("Input, please, the array elements (int numbers):");
@@ -88,8 +88,8 @@ namespace SimpleThreeTasks
                     {
                         int element;
                         string inputElement = Console.ReadLine();
-                        bool result2 = int.TryParse(inputElement, out element);
-                        if (result2)
+                        bool isInputElementCorrect = int.TryParse(inputElement, out element);
+                        if (isInputElementCorrect)
                         {
                             arr[i] = element;
                         }
@@ -108,7 +108,7 @@ namespace SimpleThreeTasks
                 }
                 else
                 {
-                    Console.WriteLine("Warning: only int number is applicable. Try again, please.");
+                    Console.WriteLine("Warning: only int number > 0 is applicable. Try again, please.");
                 }                
             }            
         }
